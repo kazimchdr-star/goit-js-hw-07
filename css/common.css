@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 24px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+h1,
+h2 {
+  font-size: 24px;
+  line-height: 1.33;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #4e75ff;
+}
+body > ul:not([id]):not([class]) {
+  display: grid;
+  gap: 16px;
+}
+input,
+button {
+  font: inherit;
+}
+input {
+  width: 360px;
+  max-width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+}
+input:hover {
+  border-color: #000;
+}
+input:focus {
+  outline: 2px solid #4e75ff;
+  outline-offset: 2px;
+}
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover {
+  background: #6c8cff;
+}
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 392px;
+  max-width: 100%;
+}
+#categories > .item {
+  padding: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+.item h2 {
+  margin-bottom: 16px;
+}
+.item ul {
+  display: grid;
+  gap: 8px;
+}
+.item ul li {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+  width: 360px;
+  max-width: 100%;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#name-input {
+  margin-bottom: 16px;
+}
+.login-form,
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login-form {
+  width: 360px;
+  max-width: 100%;
+}
+.login-form button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+.widget p {
+  margin-bottom: 16px;
+}
+#controls,
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+#controls {
+  margin-bottom: 16px;
+}
+#controls input {
+  width: 150px;
+}
+[data-destroy] {
+  background: #ff4e4e;
+}
+[data-destroy]:hover {
+  background: #ff7070;
+}
+#boxes {
+  gap: 44px;
+  overflow: auto;
+}
+#boxes > div {
+  flex-shrink: 0;
+}
